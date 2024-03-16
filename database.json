@@ -1,0 +1,10 @@
+{
+    "Victor": {
+        "password": "$2b$12$lOMV2t0xWOjXnCeIa1aCNOQVwbQC.aLomPXzwSZmNK7mq0RSxmYdC",
+        "age": 24
+    },
+    "John": {
+        "password": "$2b$12$8/9mliAXullXi45G/Q2p2.v0EbXCE6B1TQkRi5SfY/4AOt3HpeVra",
+        "age": 20
+    }
+}

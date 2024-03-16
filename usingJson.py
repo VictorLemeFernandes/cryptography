@@ -13,10 +13,18 @@ def choose_feature():
 
 while True:
     option = choose_feature()
-    dictionary = {}
-    information = {}
-
+    
     if option == 1:
+        information = {}
+
+        try:
+            # Trying to load the file .json
+            with open('database.json', 'r') as fileDatabase:
+                dictionary = json.load(fileDatabase)
+        except:
+            # If file doesn't exist, create a new dictionary
+            dictionary = {}
+
         user = input('\nType an username: ')
         password = getpass.getpass('Type your password: ').encode('utf-8')
 
@@ -27,13 +35,15 @@ while True:
         print('\n')
 
         # Putting all the information on dictionary
-        information['password'] = hash_password
-        information['age'] = age
+        information = {
+            "password": hash_password.decode('utf-8'), # I needed to use decode() because a json file doesn't accept bytes objects
+            "age": age
+        }
         dictionary[user] = information
 
-        print(type(dictionary))
-
-        json_string = json.dumps(dictionary)
-
-        file = open('database.json', 'w')
-        file.write(json_string)
+        try:
+            with open('database.json', 'w') as fileDatabase:
+                json.dump(dictionary, fileDatabase, indent=4)
+        except Exception as e:
+            print(f'Fail to write on on file: {e}')
+            exit()
