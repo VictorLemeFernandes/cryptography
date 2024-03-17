@@ -72,3 +72,8 @@ while True:
         else:
             print('This user is not registered in the database.')
         print('\n')
+    elif option == 3:
+        print('The program will be finished.')
+        exit()
+    else:
+        print('Invalid option! Try again.\n')
