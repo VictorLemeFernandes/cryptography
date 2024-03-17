@@ -1,10 +1,10 @@
 {
-    "Victor": {
-        "password": "$2b$12$lOMV2t0xWOjXnCeIa1aCNOQVwbQC.aLomPXzwSZmNK7mq0RSxmYdC",
+    "VICTOR": {
+        "password": "$2b$12$L1wZXXPi9J9gY6EDEh0UXOLU0pvlTQNNI.zekxz7DEas8A6ashnl.",
         "age": 24
     },
-    "John": {
-        "password": "$2b$12$8/9mliAXullXi45G/Q2p2.v0EbXCE6B1TQkRi5SfY/4AOt3HpeVra",
-        "age": 20
+    "JOAO": {
+        "password": "$2b$12$WLA3GLaK3jO52a4U5/qim.tNhNApVCXYHVyZm27N2eOHfcTjQPx/.",
+        "age": 15
     }
 }
